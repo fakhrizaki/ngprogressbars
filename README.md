@@ -1,5 +1,5 @@
-progressbars
-============
+ngprogressbars
+==============
 
 ## Development
 
