@@ -1,0 +1,35 @@
+<div class="bars">
+    <div class="bar" ng-repeat="b in bars track by $index" ng-class="{ 
+		    	'active': selectedBar-1 == $index,
+		    	'level1': b<=25,
+		    	'level2': b>25 && b<=50,
+		    	'level3': b>50 && b<=75,
+		    	'level4': b>75 && b<=100,
+		    	'overflow': b>100
+    		}">
+        <span class="indicator" style="width:{{b}}%"></span>
+        <span class="caption">{{b}}%</span>
+    </div>
+</div>
+
+<!-- /.bars -->
+<div class="action-bar">
+    <div class="row">
+        <div class="col-xs-5">
+            <select ng-model="selectedBar" class="form-control">
+                <option value="1">Progress A - {{bars[0]}}%</option>
+                <option value="2">Progress B - {{bars[1]}}%</option>
+                <option value="3">Progress C - {{bars[2]}}%</option>
+            </select>
+        </div>
+        <div class="col-xs-7">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default" ng-click="calc(-25)">-25</button>
+                <button type="button" class="btn btn-default" ng-click="calc(-10)">-10</button>
+                <button type="button" class="btn btn-default" ng-click="calc(+10)">+10</button>
+                <button type="button" class="btn btn-default" ng-click="calc(+25)">+25</button>
+            </div>
+        </div>
+    </div>
+
+</div>

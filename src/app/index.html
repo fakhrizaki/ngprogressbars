@@ -1,0 +1,39 @@
+<html lang="en" ng-app="progressbars">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Progress Bar App</title>
+    <!-- inject:vendor:css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/home/home.css">
+    <!-- endinject -->
+  </head>
+  <body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Progress Bar Experiment using AngularJS <small>(Responsive)</small></h1>
+            <p class="lead">Select the progress bar and change its progress level by using the controls below.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ng-view></ng-view>
+            </div>
+        </div>
+    </div>
+    <!-- inject:vendor:js -->
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-route/angular-route.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="/home/home.js"></script>
+    <script src="/home/home-controller.js"></script>
+    <script src="/app.js"></script>
+    <script src="/progressbars-templates.js"></script>
+    <!-- endinject -->
+  </body>
+</html>

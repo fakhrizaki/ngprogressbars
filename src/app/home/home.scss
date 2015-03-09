@@ -1,0 +1,78 @@
+$indicatorColor: #97E0A6;
+$overflowColor: #CD4E53; 
+/* linear gradient mixin */
+
+.bars {
+	.bar {
+		padding: 10px;
+		border: 1px solid darken($indicatorColor,50%);
+		margin: 0 0 10px 0;
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+		transition: all 250ms ease-in-out;
+		opacity: 0.2;
+		border-radius: 5px;
+		
+		.indicator {
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: $indicatorColor;
+			z-index: -1;
+			transition: all 250ms ease-in-out;
+		}
+
+		.label {
+			position: absolute;
+			left: 10px;
+			top: 10px;
+			font-size: 12px;
+		}
+
+		&.active {
+			opacity: 1;
+			border-width: 1px;
+			padding: 30px;
+		}
+
+		&.overflow {
+			color: #fff;
+			border-color: darken($overflowColor,20%);
+			.indicator {
+				background-color: $overflowColor;
+			}
+		}
+
+		&.level1 {
+			.indicator {
+				background: darken($indicatorColor,10%);
+			}
+		}
+		&.level2 {
+			.indicator {
+				background: darken($indicatorColor,20%);
+			}
+		}
+		&.level3 {
+			color: #fff;
+			.indicator {
+				background: darken($indicatorColor,30%);
+			}
+		}
+		&.level4 {
+			color: #fff;
+			.indicator {
+				background: darken($indicatorColor,40%);
+			}
+		}
+		
+	}
+}
+
+.action-bar {
+	margin-top: 40px;
+}
