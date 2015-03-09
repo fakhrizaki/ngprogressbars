@@ -1,6 +1,15 @@
 body {
   font-family: 'Lato', sans-serif; }
 
+footer {
+  margin-top: 30px;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  text-align: right; }
+
+.heart {
+  color: red; }
+
 /* linear gradient mixin */
 .bars .bar {
   padding: 10px;
@@ -30,7 +39,8 @@ body {
   .bars .bar.active {
     opacity: 1;
     border-width: 1px;
-    padding: 30px; }
+    padding: 30px;
+    font-size: 2em; }
   .bars .bar.overflow {
     color: #fff;
     border-color: #8d282d; }
