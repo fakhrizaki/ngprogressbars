@@ -1,7 +1,7 @@
 ngprogressbars
 ==============
 
-[Demo](http://ngprogress.fakhrizaki.com)
+[Click here for the demo](http://ngprogress.fakhrizaki.com)
 
 ## Development
 
