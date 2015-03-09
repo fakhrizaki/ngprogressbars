@@ -1,6 +1,8 @@
 ngprogressbars
 ==============
 
+[Demo](http://ngprogress.fakhrizaki.com)
+
 ## Development
 
 To start developing in the project run:
